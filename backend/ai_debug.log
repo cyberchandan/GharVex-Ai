@@ -118,3 +118,27 @@ Please retry in 15.531630525s. [{"@type":"type.googleapis.com/google.rpc.Help","
 [2026-04-01T14:12:39.578Z] Gemini History size: 14
 [2026-04-01T14:12:39.581Z] Last message received: hn
 [2026-04-01T14:12:46.987Z] Response received from Gemini
+[2026-04-01T14:16:54.969Z] Chat request received: [{"role":"assistant","content":"Hello! I am Gharvex Ai. Briefly describe what kind of construction or renovation project you have in mind."},{"role":"user","content":"hii"}]
+[2026-04-01T14:16:54.974Z] Gemini History size: 0
+[2026-04-01T14:16:54.976Z] Last message received: hii
+[2026-04-01T14:16:56.705Z] Response received from Gemini
+[2026-04-01T14:17:20.540Z] Chat request received: [{"role":"assistant","content":"Hello! I am Gharvex Ai. Briefly describe what kind of construction or renovation project you have in mind."},{"role":"user","content":"hii"},{"role":"assistant","content":"Hello! Gharvex Ai here, your expert AI assistant for home construction and renovation.\n\nAre you planning a brand new home build, or looking to renovate a specific part of your existing home?"},{"role":"user","content":"recently i gave u a project"}]
+[2026-04-01T14:17:20.543Z] Gemini History size: 2
+[2026-04-01T14:17:20.546Z] Last message received: recently i gave u a project
+[2026-04-01T14:17:23.375Z] Response received from Gemini
+[2026-04-01T14:22:29.287Z] Chat request received: [{"role":"assistant","content":"Hello! I am Gharvex Ai. Briefly describe what kind of construction or renovation project you have in mind."},{"role":"user","content":"can you chat in hinglish "}]
+[2026-04-01T14:22:29.289Z] Gemini History size: 0
+[2026-04-01T14:22:29.290Z] Last message received: can you chat in hinglish 
+[2026-04-01T14:22:31.307Z] Response received from Gemini
+[2026-04-01T14:22:54.674Z] Chat request received: [{"role":"assistant","content":"Hello! I am Gharvex Ai. Briefly describe what kind of construction or renovation project you have in mind."},{"role":"user","content":"can you chat in hinglish "},{"role":"assistant","content":"Hello! Namaste! Mai Gharvex Ai hu, aapki madad ke liye taiyar.\n\nAapka project kaisa hai? Ek naya ghar banana hai ya existing ghar mein koi renovation karna hai?"},{"role":"user","content":"existing ghar me hi renovation krwana h bus"}]
+[2026-04-01T14:22:54.677Z] Gemini History size: 2
+[2026-04-01T14:22:54.679Z] Last message received: existing ghar me hi renovation krwana h bus
+[2026-04-01T14:22:59.625Z] Response received from Gemini
+[2026-04-01T14:23:58.565Z] Chat request received: [{"role":"assistant","content":"Hello! I am Gharvex Ai. Briefly describe what kind of construction or renovation project you have in mind."},{"role":"user","content":"can you chat in hinglish "},{"role":"assistant","content":"Hello! Namaste! Mai Gharvex Ai hu, aapki madad ke liye taiyar.\n\nAapka project kaisa hai? Ek naya ghar banana hai ya existing ghar mein koi renovation karna hai?"},{"role":"user","content":"existing ghar me hi renovation krwana h bus"},{"role":"assistant","content":"Theek hai! Existing ghar mein renovation. Bahut accha!\n\nKya aap mujhe thoda aur bata sakte hain ki aap kis hisse ka renovation karwana chahte hain? Jaise ki:\n\n1.  **Kaun se rooms** ya area (kitchen, bathroom, living room, poora floor)?\n2.  **Kitna bada area** hai approximately (sq ft mein, ya small/medium/large renovation)?\n3.  **Kis type ka kaam** hai (paint, flooring, plumbing, electrical, structural changes)?\n\nAur aapka ghar kis **City/Area** mein hai?"},{"role":"user","content":"greater noida me h,ek bedroom me paint krwana h bs"}]
+[2026-04-01T14:23:58.568Z] Gemini History size: 4
+[2026-04-01T14:23:58.570Z] Last message received: greater noida me h,ek bedroom me paint krwana h bs
+[2026-04-01T14:24:01.345Z] Response received from Gemini
+[2026-04-01T14:24:25.334Z] Chat request received: [{"role":"assistant","content":"Hello! I am Gharvex Ai. Briefly describe what kind of construction or renovation project you have in mind."},{"role":"user","content":"can you chat in hinglish "},{"role":"assistant","content":"Hello! Namaste! Mai Gharvex Ai hu, aapki madad ke liye taiyar.\n\nAapka project kaisa hai? Ek naya ghar banana hai ya existing ghar mein koi renovation karna hai?"},{"role":"user","content":"existing ghar me hi renovation krwana h bus"},{"role":"assistant","content":"Theek hai! Existing ghar mein renovation. Bahut accha!\n\nKya aap mujhe thoda aur bata sakte hain ki aap kis hisse ka renovation karwana chahte hain? Jaise ki:\n\n1.  **Kaun se rooms** ya area (kitchen, bathroom, living room, poora floor)?\n2.  **Kitna bada area** hai approximately (sq ft mein, ya small/medium/large renovation)?\n3.  **Kis type ka kaam** hai (paint, flooring, plumbing, electrical, structural changes)?\n\nAur aapka ghar kis **City/Area** mein hai?"},{"role":"user","content":"greater noida me h,ek bedroom me paint krwana h bs"},{"role":"assistant","content":"Theek hai, Greater Noida mein ek bedroom ka paint karwana hai. Got it!\n\nKya aap mujhe apna **estimated budget** bata sakte hain is kaam ke liye? Ek rough idea bhi chalega."},{"role":"user","content":"hn 20k budgets h mera "}]
+[2026-04-01T14:24:25.338Z] Gemini History size: 6
+[2026-04-01T14:24:25.340Z] Last message received: hn 20k budgets h mera 
+[2026-04-01T14:24:28.782Z] Response received from Gemini
