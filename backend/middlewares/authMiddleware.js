@@ -13,12 +13,23 @@ const protect = asyncHandler(async (req, res, next) => {
       token = req.headers.authorization.split(' ')[1];
       const decoded = jwt.verify(token, process.env.JWT_SECRET);
       
-      req.user = await User.findById(decoded.id).select('-password');
-      next();
+      try {
+        req.user = await User.findById(decoded.id).select('-password');
+        if (!req.user) {
+          console.error(`User not found for id: ${decoded.id}`);
+          res.status(401);
+          throw new Error('Not authorized, user no longer exists');
+        }
+        next();
+      } catch (dbError) {
+        console.error('Database error in protect middleware:', dbError.message);
+        res.status(500);
+        throw new Error('Authentication failed due to database error: ' + dbError.message);
+      }
     } catch (error) {
-      console.error(error);
+      console.error('JWT Verification Error:', error.message);
       res.status(401);
-      throw new Error('Not authorized, token failed');
+      throw new Error('Not authorized, token failed: ' + error.message);
     }
   }
 
