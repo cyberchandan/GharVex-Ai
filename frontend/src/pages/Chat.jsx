@@ -50,7 +50,8 @@ const Chat = () => {
       }
     } catch (error) {
       console.error('Chat error', error);
-      setMessages([...newMessages, { role: 'assistant', content: 'Oops, something went wrong. Let me reconnect...' }]);
+      const errMsg = error.response?.data?.message || error.message || 'Something went wrong';
+      setMessages([...newMessages, { role: 'assistant', content: `Oops: ${errMsg}` }]);
     }
     setLoading(false);
   };
