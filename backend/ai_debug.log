@@ -204,3 +204,11 @@ Please retry in 14.620038022s. [{"@type":"type.googleapis.com/google.rpc.Help","
 [2026-04-02T16:29:25.035Z] Gemini History size: 4
 [2026-04-02T16:29:25.037Z] Last message received: new house
 [2026-04-02T16:29:26.492Z] Response received from Gemini
+[2026-04-02T16:31:45.615Z] Chat request received: [{"role":"assistant","content":"Hello! I am Gharvex Ai. Briefly describe what kind of construction or renovation project you have in mind."},{"role":"user","content":"hiiii"}]
+[2026-04-02T16:31:45.618Z] Gemini History size: 0
+[2026-04-02T16:31:45.620Z] Last message received: hiiii
+[2026-04-02T16:31:47.815Z] Response received from Gemini
+[2026-04-02T16:32:00.991Z] Chat request received: [{"role":"assistant","content":"Hello! I am Gharvex Ai. Briefly describe what kind of construction or renovation project you have in mind."},{"role":"user","content":"hiiii"},{"role":"assistant","content":"Hi there! I'm Gharvex AI, your AI Smart Contractor assistant. I can help you plan your home construction or renovation project.\n\nTo start, could you tell me if this is a **new build** or a **renovation** of an existing space?"},{"role":"user","content":"100 gaz plot make 4 flor"}]
+[2026-04-02T16:32:00.994Z] Gemini History size: 2
+[2026-04-02T16:32:00.996Z] Last message received: 100 gaz plot make 4 flor
+[2026-04-02T16:32:04.478Z] Response received from Gemini
