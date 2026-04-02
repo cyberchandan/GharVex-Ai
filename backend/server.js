@@ -10,9 +10,23 @@ const { errorHandler, notFound } = require('./middlewares/errorMiddleware');
 dotenv.config();
 
 // Connect to database
+const app = express();
+
+// Database initialization
 connectDB();
 
-const app = express();
+// Middleware to ensure DB is connected before any request is processed
+app.use(async (req, res, next) => {
+  try {
+    await connectDB();
+    next();
+  } catch (error) {
+    res.status(500).json({ 
+      message: 'Database connection error. Please ensure MONGO_URI is set in Vercel environment variables and the IP address is whitelisted in MongoDB Atlas.',
+      error: error.message 
+    });
+  }
+});
 
 // Middlewares
 app.use(express.json());

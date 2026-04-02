@@ -212,3 +212,39 @@ Please retry in 14.620038022s. [{"@type":"type.googleapis.com/google.rpc.Help","
 [2026-04-02T16:32:00.994Z] Gemini History size: 2
 [2026-04-02T16:32:00.996Z] Last message received: 100 gaz plot make 4 flor
 [2026-04-02T16:32:04.478Z] Response received from Gemini
+[2026-04-02T16:49:29.238Z] Chat request received: [{"role":"assistant","content":"Hello! I am Gharvex Ai. Briefly describe what kind of construction or renovation project you have in mind."},{"role":"user","content":"hii"}]
+[2026-04-02T16:49:29.241Z] Gemini History size: 0
+[2026-04-02T16:49:29.242Z] Last message received: hii
+[2026-04-02T16:49:39.899Z] ERROR: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent: fetch failed
+[2026-04-02T16:49:58.010Z] Chat request received: [{"role":"assistant","content":"Hello! I am Gharvex Ai. Briefly describe what kind of construction or renovation project you have in mind."},{"role":"user","content":"hii"}]
+[2026-04-02T16:49:58.016Z] Gemini History size: 0
+[2026-04-02T16:49:58.018Z] Last message received: hii
+[2026-04-02T16:49:59.311Z] Response received from Gemini
+[2026-04-02T16:50:04.611Z] Chat request received: [{"role":"assistant","content":"Hello! I am Gharvex Ai. Briefly describe what kind of construction or renovation project you have in mind."},{"role":"user","content":"hii"},{"role":"assistant","content":"Hello! I'm Gharvex AI, your smart contractor assistant.\n\nAre you planning a new home build or a specific renovation project?"},{"role":"user","content":"50 gaz"}]
+[2026-04-02T16:50:04.615Z] Gemini History size: 2
+[2026-04-02T16:50:04.617Z] Last message received: 50 gaz
+[2026-04-02T16:50:07.295Z] Response received from Gemini
+[2026-04-02T16:52:06.193Z] Chat request received: [{"role":"assistant","content":"Hello! I am Gharvex Ai. Briefly describe what kind of construction or renovation project you have in mind."},{"role":"user","content":"hii"}]
+[2026-04-02T16:52:06.199Z] Gemini History size: 0
+[2026-04-02T16:52:06.201Z] Last message received: hii
+[2026-04-02T16:52:08.275Z] Response received from Gemini
+[2026-04-02T16:52:14.003Z] Chat request received: [{"role":"assistant","content":"Hello! I am Gharvex Ai. Briefly describe what kind of construction or renovation project you have in mind."},{"role":"user","content":"hii"},{"role":"assistant","content":"Hello! Gharvex AI here, your smart contractor assistant.\n\nAre you planning a **new build** from scratch, or a **renovation** project (like a kitchen remodel, bathroom addition, or something else specific)?"},{"role":"user","content":"50 gaz"}]
+[2026-04-02T16:52:14.010Z] Gemini History size: 2
+[2026-04-02T16:52:14.012Z] Last message received: 50 gaz
+[2026-04-02T16:52:16.892Z] Response received from Gemini
+[2026-04-02T16:56:55.755Z] Chat request received: [{"role":"assistant","content":"Hello! I am Gharvex Ai. Briefly describe what kind of construction or renovation project you have in mind."},{"role":"user","content":"hii"},{"role":"assistant","content":"Hello! Gharvex AI here, your smart contractor assistant.\n\nAre you planning a **new build** from scratch, or a **renovation** project (like a kitchen remodel, bathroom addition, or something else specific)?"},{"role":"user","content":"50 gaz"},{"role":"assistant","content":"Okay, \"50 gaz\" usually refers to 50 square yards, which is about 450 square feet. That's a compact size.\n\nAre you looking to build a **new home** on a 50 gaz plot, or are you planning a **renovation** within an existing structure that's around that size?\n\nAnd what kind of rooms or spaces are you envisioning for this project?"},{"role":"user","content":"can you talk in hindi "}]
+[2026-04-02T16:56:55.763Z] Gemini History size: 4
+[2026-04-02T16:56:55.767Z] Last message received: can you talk in hindi 
+[2026-04-02T16:56:57.739Z] Response received from Gemini
+[2026-04-02T16:58:14.895Z] Chat request received: [{"role":"assistant","content":"Hello! I am Gharvex Ai. Briefly describe what kind of construction or renovation project you have in mind."},{"role":"user","content":"speak in hindi"}]
+[2026-04-02T16:58:14.897Z] Gemini History size: 0
+[2026-04-02T16:58:14.899Z] Last message received: speak in hindi
+[2026-04-02T16:58:17.152Z] Response received from Gemini
+[2026-04-02T16:59:03.997Z] Chat request received: [{"role":"assistant","content":"Hello! I am Gharvex Ai. Briefly describe what kind of construction or renovation project you have in mind."},{"role":"user","content":"hii"}]
+[2026-04-02T16:59:04.002Z] Gemini History size: 0
+[2026-04-02T16:59:04.004Z] Last message received: hii
+[2026-04-02T16:59:06.180Z] Response received from Gemini
+[2026-04-02T16:59:19.361Z] Chat request received: [{"role":"assistant","content":"Hello! I am Gharvex Ai. Briefly describe what kind of construction or renovation project you have in mind."},{"role":"user","content":"hii"},{"role":"assistant","content":"Hello! Gharvex Ai here, your AI Smart Contractor assistant. I can help you plan your home construction or renovation project.\n\nAre you looking to build a brand new home, or is this a renovation of an existing space?"},{"role":"user","content":"new brand home"}]
+[2026-04-02T16:59:19.366Z] Gemini History size: 2
+[2026-04-02T16:59:19.367Z] Last message received: new brand home
+[2026-04-02T16:59:21.209Z] Response received from Gemini
