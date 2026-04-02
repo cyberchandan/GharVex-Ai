@@ -5,13 +5,19 @@ const path = require('path');
 
 const logToFile = (msg) => {
   const logMsg = `[${new Date().toISOString()}] ${msg}\n`;
-  fs.appendFileSync(path.join(__dirname, '../ai_debug.log'), logMsg);
+  console.log(logMsg.trim());
+  try {
+    // Check if we are on Vercel or in a read-only environment
+    fs.appendFileSync(path.join(__dirname, '../ai_debug.log'), logMsg);
+  } catch (err) {
+    // Silently ignore write errors on read-only filesystems like Vercel
+  }
 };
 
 const handleChat = asyncHandler(async (req, res) => {
   const { messages } = req.body;
   logToFile('Chat request received: ' + JSON.stringify(messages));
-  
+
   // Using Google Gemini API
 
   const systemPromptContent = `You are "Gharvex Ai", an expert civil engineer and AI Smart Contractor assistant.
@@ -41,31 +47,31 @@ If they haven't finalized, just respond conversationally and helpfully. Keep res
 
   try {
     const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY.trim());
-    const model = genAI.getGenerativeModel({ 
+    const model = genAI.getGenerativeModel({
       model: "gemini-2.5-flash",
-      systemInstruction: systemPromptContent 
+      systemInstruction: systemPromptContent
     });
 
     const chatHistory = [];
     messages.slice(0, -1).forEach((msg, index) => {
       // Gemini history usually must start with a 'user' message.
       // If the first message is from assistant, we might skip it or handle it.
-      if (index === 0 && msg.role === 'assistant') return; 
-      
+      if (index === 0 && msg.role === 'assistant') return;
+
       chatHistory.push({
         role: msg.role === 'assistant' ? 'model' : 'user',
         parts: [{ text: msg.content }]
       });
     });
-    
+
     console.log('Gemini History:', JSON.stringify(chatHistory, null, 2));
 
     logToFile('Gemini History size: ' + chatHistory.length);
 
     const chat = model.startChat({
-        history: chatHistory,
+      history: chatHistory,
     });
-    
+
     const lastMessage = messages[messages.length - 1].content;
     logToFile('Last message received: ' + lastMessage);
 
@@ -90,7 +96,7 @@ If they haven't finalized, just respond conversationally and helpfully. Keep res
   }
 
   let replyText = responseContent.replace(/```json[\s\S]*?```/g, '').replace(/```[\s\S]*?```/g, '').trim();
-  
+
   // If the reply is empty after stripping code blocks (common when AI only outputs JSON),
   // provide a standard confirmation or the raw content as a fallback.
   if (!replyText) {
@@ -107,5 +113,5 @@ If they haven't finalized, just respond conversationally and helpfully. Keep res
     projectData: parsedProject,
   });
 });
-
 module.exports = { handleChat };
+
